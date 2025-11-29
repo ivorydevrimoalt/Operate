@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A Calm Invitation</title>
+    <!-- Load Tailwind CSS -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles for a calming font and smooth background */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        
+        body {
+            font-family: 'Inter', sans-serif;
+            /* A dark, slightly muted background for a calm feel */
+            background-color: #0d1117; 
+            min-height: 100vh;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 1rem;
+        }
+
+        /* Subtle glow/shadow for the card */
+        .calm-card {
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.5);
+            animation: fadeIn 1.5s ease-out forwards;
+            opacity: 0;
+            transform: translateY(20px);
+        }
+        
+        @keyframes fadeIn {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="calm-card w-full max-w-lg mx-auto bg-gray-800 p-8 md:p-12 rounded-2xl border border-gray-700/50 text-center shadow-2xl">
+        <!-- Icon/Symbol (A simple calming image or text element) -->
+        <div class="mb-6 text-indigo-400">
+            <svg class="w-16 h-16 mx-auto" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M12 3v1m0 16v1m9-9h-1M4 12H3m15.364 6.364l-.707-.707M6.343 6.343l-.707-.707m12.728 0l-.707.707M6.343 17.657l-.707.707M16 12a4 4 0 11-8 0 4 4 0 018 0z"></path>
+            </svg>
+        </div>
+
+        <h1 class="text-3xl sm:text-4xl font-semibold text-white mb-4 leading-tight">
+            Welcome to Our Quiet Corner
+        </h1>
+        
+        <p class="text-gray-400 mb-8 text-lg sm:text-xl">
+            A space to find focus, share ideas, and enjoy a moment of peace. You are invited to join our community.
+        </p>
+
+        <!-- Discord Invitation Button -->
+        <a 
+            href="https://discord.gg/AtewDkFVdV" 
+            target="_blank" 
+            rel="noopener noreferrer"
+            class="inline-flex items-center justify-center w-full sm:w-auto px-8 py-3 
+                   bg-indigo-600 text-white font-medium text-lg rounded-full 
+                   shadow-lg hover:bg-indigo-500 transition-all duration-300 
+                   transform hover:scale-[1.03] focus:outline-none focus:ring-4 
+                   focus:ring-indigo-500 focus:ring-opacity-50"
+        >
+            <!-- Discord Icon (simple inline SVG) -->
+            <svg class="w-6 h-6 mr-2" fill="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M19.537 2.007a1.002 1.002 0 00-.733-.506c-1.892-.613-3.793-.78-5.694-.657a12.6 12.6 0 00-6.108 2.053A12.791 12.791 0 001.277 8.163c-.156 1.432-.14 2.87.039 4.306a1.002 1.002 0 00.324.717c1.334 1.157 2.81 2.035 4.375 2.658.006.002.011.004.017.006a1.005 1.005 0 00.999-.187c.725-.662 1.341-1.396 1.834-2.181a1.002 1.002 0 00-.285-1.55c-.538-.288-1.077-.591-1.597-.912a1.003 1.003 0 00-.518-.124c.032-.142.072-.284.116-.425a.997.997 0 00.27-.678c.03-.314.045-.63.045-.947a5.006 5.006 0 015.011-5.01c2.766 0 5.01 2.244 5.01 5.01 0 .317-.015.632-.045.946a.998.998 0 00.27.678c.044.14.084.283.116.425a1.003 1.003 0 00-.518.124c-.52.32-1.059.624-1.597.912a1.002 1.002 0 00-.285 1.55c.493.784 1.109 1.519 1.834 2.18a1.002 1.002 0 00.997.189c.007-.003.013-.005.019-.007 1.564-.623 3.039-1.501 4.373-2.657a1.002 1.002 0 00.324-.717c.18-.396.353-.8.508-1.222.378-1.03.626-2.115.733-3.224.238-2.486.074-5.004-.47-7.46zm-5.694 7.647a1.002 1.002 0 00-.733-.506c-1.892-.613-3.793-.78-5.694-.657a12.6 12.6 0 00-6.108 2.053A12.791 12.791 0 001.277 8.163c-.156 1.432-.14 2.87.039 4.306a1.002 1.002 0 00.324.717c1.334 1.157 2.81 2.035 4.375 2.658.006.002.011.004.017.006a1.005 1.005 0 00.999-.187c.725-.662 1.341-1.396 1.834-2.181a1.002 1.002 0 00-.285-1.55c-.538-.288-1.077-.591-1.597-.912a1.003 1.003 0 00-.518-.124c.032-.142.072-.284.116-.425a.997.997 0 00.27-.678c.03-.314.045-.63.045-.947a5.006 5.006 0 015.011-5.01c2.766 0 5.01 2.244 5.01 5.01 0 .317-.015.632-.045.946a.998.998 0 00.27.678c.044.14.084.283.116.425a1.003 1.003 0 00-.518.124c-.52.32-1.059.624-1.597.912a1.002 1.002 0 00-.285 1.55c.493.784 1.109 1.519 1.834 2.18a1.002 1.002 0 00.997.189c.007-.003.013-.005.019-.007 1.564-.623 3.039-1.501 4.373-2.657a1.002 1.002 0 00.324-.717c.18-.396.353-.8.508-1.222.378-1.03.626-2.115.733-3.224.238-2.486.074-5.004-.47-7.46z"/>
+            </svg>
+            Join the Flow
+        </a>
+        
+        <!-- Subtle Secondary Text -->
+        <p class="mt-8 text-sm text-gray-600">
+            Clicking the button will take you directly to the server.
+        </p>
+
+    </div>
+
+</body>
+</html>
