@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calm Reminder</title>
+    <!-- Load Tailwind CSS for utility classes -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <style>
+        /* Custom styles to ensure full viewport height and use Inter font */
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            transition: background-color 0.5s;
+        }
+    </style>
+</head>
+<!-- Dark theme: Deep blue background and centers content vertically and horizontally -->
+<body class="bg-gray-900 min-h-screen flex items-center justify-center p-4">
+    
+    <!-- Main card container with dark colors and subtle shadows -->
+    <div class="max-w-md w-full p-8 md:p-12 bg-gray-800 rounded-3xl shadow-2xl border border-gray-700 transition duration-500 transform hover:scale-[1.01]">
+        <div class="text-center">
+            
+            <!-- Calming Icon (Abstract Feather/Leaf) in a gentle, accessible color -->
+            <svg class="w-12 h-12 mx-auto mb-6 text-indigo-400" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M11 5l3.667 3.667a4 4 0 010 5.666l-6 6a2 2 0 01-2.827 0l-1.173-1.173a2 2 0 010-2.827l6-6a4 4 0 015.666 0L19 13"></path>
+                <path stroke-linecap="round" stroke-linejoin="round" stroke-width="1.5" d="M19 13l-4-4"></path>
+            </svg>
+
+            <!-- The required message with light text for contrast -->
+            <p class="text-3xl md:text-4xl font-extralight text-gray-200 leading-snug tracking-wide select-none">
+                Calm down, don't ask too many questions
+            </p>
+            
+            <!-- A subtle instruction for reinforcement -->
+            <p class="mt-6 text-sm text-gray-500">
+                (Just breathe.)
+            </p>
+        </div>
+    </div>
+</body>
+</html>
